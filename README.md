@@ -1,22 +1,30 @@
 # AWS project
 
+This repository is dedicated to showcasing a series of projects focused on **data analysis**, **data quality control**, **diagnostic monitoring**, and **data wrangling** using **Amazon Web Services (AWS)** and other modern tools. The goal of this repository is to provide insights into various methodologies for processing and analyzing complex datasets, building diagnostic dashboards, and ensuring high-quality data for business decision-making.
+
+### Key Areas of Focus:
+1. **Descriptive Analysis**: Exploring trends in business license data to better understand economic activities in specific regions.
+2. **Diagnostic Monitoring**: Leveraging AWS CloudWatch to monitor storage and performance of AWS resources in a data pipeline.
+3. **Data Wrangling**: Addressing challenges in cleaning and transforming unstructured datasets for analysis.
+4. **Data Quality Control**: Implementing strategies to ensure accuracy and completeness in datasets, particularly for students and registration data.
+
 
 
 
 # Descriptive Analysis 
 
-## Project Description
+### Project Description
 Conduct an Exploratory Data Analysis on Business Licenses Data in North Vancouver.
 
-## Project Title
+### Project Title
 **Understanding Business Trends in North Vancouver**
 
-## Objective
+### Objective
 In this project, the main aim is to analyze the business license data of North Vancouver in 2024 through Exploratory Data Analysis. Hence, in this paper, we seek to explore the economic activities of the area of interest by focusing on the business type, the status of the license, and the annual trends. This analysis seeks to answer the following: 
 
 **In 2024, which business types are most common in North Vancouver, and how are the licenses spread across the different categories?**
 
-## Dataset
+### Dataset
 The dataset includes detailed information about business licenses issued between 2013 and 2024 across various areas, specifically focusing on North Vancouver. It contains the following key columns:
 - **FOLDERYEAR:** Year in which the license was issued (e.g., 24 for 2024).
 - **LicenceRSN:** Unique reference number for the license.
@@ -36,7 +44,7 @@ The dataset includes detailed information about business licenses issued between
 - **FeePaid:** License fee paid in Canadian dollars.
 - **ExtractDate:** Date when the data was extracted from the source.
 
-## Methodology
+### Methodology
 1. **Data Collection and Preparation:**  
    a. Load the dataset using S3 by creating different buckets (raw, transform, and curated folders).  
 2. **Data Profiling:**  
@@ -54,30 +62,30 @@ The dataset includes detailed information about business licenses issued between
 6. **Conclusion:**  
    Summarized findings suggest that specific industries boost the local economy. This information can be helpful for policy and investment decisions. Future analyses could include projections of license trends.
 
-## Tools and Technologies
+### Tools and Technologies
 - **Amazon S3:** Used to store and organize data in buckets at different stages of the data pipeline (Raw, Transformed, and Curated).
 - **AWS Glue DataBrew:** Utilized for data profiling and cleaning, allowing for efficient identification of missing values, outliers, and patterns in the dataset.
 - **AWS Glue:** Employed to design and execute the ETL pipeline, transforming raw data into meaningful insights.
 
-## Deliverables
+### Deliverables
 - A detailed report summarizing the methods, findings, and methodology.
 
 ---
 
 # Diagnostic Analysis 
 
-## Project Description
+### Project Description
 AWS CloudWatch in the diagnosis of AWS Resources.
 
-## Project Title
+### Project Title
 **A Diagnostic Dashboard for AWS Components**
 
-## Objective
+### Objective
 This work aims to identify the usage and effectiveness of AWS components used in the data pipeline for business license analysis. The goals include utilizing CloudWatch dashboards to:
 - Track storage usage, the number of objects, and the estimated charges for the raw, transformed, and curated buckets.  
 - Set alerts to warn when thresholds are crossed, facilitating early intervention.
 
-## Dataset
+### Dataset
 The diagnostic analysis focuses on AWS resources used in the data pipeline for processing business licenses:
 - **S3 Buckets:** Storage and number of objects in each bucket:  
   1. **Raw Bucket:** `ro-rw-irr2`  
@@ -86,7 +94,7 @@ The diagnostic analysis focuses on AWS resources used in the data pipeline for p
 - Projected usage of S3, Glue, and DataBrew for the last 3 months.
 - **Alarms Configured:** Alerts for storage limit ranges.
 
-## Methodology
+### Methodology
 1. **CloudWatch Dashboard Setup:**  
    Developed a dashboard consolidating metrics for S3 buckets and associated AWS components.  
 2. **Visualization Components:**  
@@ -95,27 +103,27 @@ The diagnostic analysis focuses on AWS resources used in the data pipeline for p
 3. **Alerts Dashboard:**  
    Created alarms for bucket storage exceeding defined limits.
 
-## Tools and Technologies
+### Tools and Technologies
 - **AWS CloudWatch:** Used for dashboard visualization and alarm setup.  
 - **AWS S3:** Monitored storage usage and object counts.
 
-## Deliverables
+### Deliverables
 - CloudWatch dashboard with interactive visualizations of metrics and alarms.
 
 ---
 
 # Data Wrangling 
 
-## Project Description
+### Project Description
 Exploratory Data Analysis in a Dirty Dataset (Week 3).
 
-## Project Title
+### Project Title
 **Data Quality: An Exploratory Data Analysis**
 
-## Objective
+### Objective
 Identify anomalies, patterns, and insights using features such as age and income. Prepare the dataset for better analysis.
 
-## Dataset
+### Dataset
 The dataset includes customer information with fields:
 - **ID:** Unique customer identifier.  
 - **Name:** Customer's full name.  
@@ -128,7 +136,7 @@ The dataset includes customer information with fields:
 - **Height (cm):** Customer's height in centimeters.  
 - **Satisfaction:** Satisfaction level on a scale of 10.
 
-## Methodology
+### Methodology
 1. **Data Collection and Preparation:**  
    - Ingested raw data into the Amazon S3 Raw Data bucket.  
    - Profiled data using AWS Glue DataBrew.  
@@ -141,40 +149,40 @@ The dataset includes customer information with fields:
 3. **Insights and Findings:**  
    - Highlighted data quality issues, such as negative ages and inconsistent country names.
 
-## Tools and Technologies
+### Tools and Technologies
 - **Amazon S3:** Structured storage of raw, transformed, and curated data.  
 - **AWS Glue DataBrew:** For profiling, cleaning, and transformation.
 
-## Deliverables
+### Deliverables
 - Cleaned dataset stored in the Transformed Data bucket on S3.
 
 ---
 
 # Data Quality Control 
 
-## Project Description
+### Project Description
 A review of students, admission, and registration datasets for data quality.
 
-## Project Title
+### Project Title
 **Improving the Quality of Data**
 
-## Objective
+### Objective
 Conduct data quality control to ensure data is accurate, complete, and usable for analysis or operations.
 
-## Background
-### Students Dataset
+### Background
+#### Students Dataset
 - Contains student number, name, age, gender, and course of study.  
 - **Common issues:** Different gender formats ("Male/M"), inconsistent date formats.
 
-### Admissions Dataset
+#### Admissions Dataset
 - Tracks student applications with fields like admission ID, application date, and admission status.  
 - **Common issues:** Blank spaces, inconsistent date formats.
 
-### Registration Dataset
+#### Registration Dataset
 - Contains course registration records with fields like registration ID and course code.  
 - **Common issues:** Blank spaces, inconsistent date formats.
 
-## Methodology
+### Methodology
 1. **Data Collection and Storage:**  
    - Stored datasets in Amazon S3 buckets:
       - Raw Data Bucket.  
@@ -191,9 +199,9 @@ Conduct data quality control to ensure data is accurate, complete, and usable fo
    - Confirmed valid credit values in the registration dataset.  
    - Ensured consistent gender patterns (M/F).
 
-## Tools and Technologies
+### Tools and Technologies
 - **Amazon S3:** For structured storage.  
 - **AWS Glue DataBrew:** For profiling, cleaning, and validation.
 
-## Deliverables
+### Deliverables
 - Cleaned datasets stored in the curated bucket on S3.
