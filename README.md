@@ -3,7 +3,7 @@
 This repository is dedicated to showcasing a series of projects focused on **data analysis**, **data quality control**, **diagnostic**, and **data wrangling** using **Amazon Web Services (AWS)**. The goal of this repository is to provide insights into various methodologies for processing and analyzing datasets, building diagnostic dashboards, and ensuring high-quality data for decision-making.
 
 ### Key Areas of Focus:
-1. **Descriptive Analysis**: Exploring trends in business license data to better understand economic activities in specific regions.
+1. **Exploratory Analysis**: Exploring trends in business license data to better understand economic activities in specific regions.
 2. **Diagnostic Monitoring**: Leveraging AWS CloudWatch to monitor storage and performance of AWS resources in a data pipeline.
 3. **Data Wrangling**: Addressing challenges in cleaning and transforming unstructured datasets for analysis.
 4. **Data Quality Control**: Implementing strategies to ensure accuracy and completeness in datasets, particularly for students and registration data.
