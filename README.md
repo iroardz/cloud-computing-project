@@ -11,7 +11,7 @@ This repository is dedicated to showcasing a series of projects focused on **dat
 
 
 
-# Descriptive Analysis 
+# Exploratory Data Analysis
 
 ### Project Description
 Conduct an Exploratory Data Analysis on Business Licenses Data in North Vancouver.
