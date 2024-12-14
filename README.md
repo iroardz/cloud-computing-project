@@ -1,6 +1,6 @@
 # AWS project
 
-This repository is dedicated to showcasing a series of projects focused on **data analysis**, **data quality control**, **diagnostic monitoring**, and **data wrangling** using **Amazon Web Services (AWS)** and other modern tools. The goal of this repository is to provide insights into various methodologies for processing and analyzing complex datasets, building diagnostic dashboards, and ensuring high-quality data for business decision-making.
+This repository is dedicated to showcasing a series of projects focused on **data analysis**, **data quality control**, **diagnostic**, and **data wrangling** using **Amazon Web Services (AWS)**. The goal of this repository is to provide insights into various methodologies for processing and analyzing datasets, building diagnostic dashboards, and ensuring high-quality data for decision-making.
 
 ### Key Areas of Focus:
 1. **Descriptive Analysis**: Exploring trends in business license data to better understand economic activities in specific regions.
