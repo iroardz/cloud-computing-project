@@ -22,6 +22,9 @@ Conduct an Exploratory Data Analysis on Business Licenses Data in North Vancouve
 ### Objective
 In this project, the main aim is to analyze the business license data of North Vancouver in 2024 through Exploratory Data Analysis. Hence, in this paper, we seek to explore the economic activities of the area of interest by focusing on the business type, the status of the license, and the annual trends. This analysis seeks to answer the following: 
 
+### Architecture
+![Descriptive Analysis](https://github.com/user-attachments/assets/bb301928-a8b5-495d-a730-60c75bb0a917)
+
 **In 2024, which business types are most common in North Vancouver, and how are the licenses spread across the different categories?**
 
 ### Dataset
