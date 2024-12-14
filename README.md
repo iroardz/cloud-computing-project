@@ -20,12 +20,10 @@ Conduct an Exploratory Data Analysis on Business Licenses Data in North Vancouve
 **Understanding Business Trends in North Vancouver**
 
 ### Objective
-In this project, the main aim is to analyze the business license data of North Vancouver in 2024 through Exploratory Data Analysis. Hence, in this paper, we seek to explore the economic activities of the area of interest by focusing on the business type, the status of the license, and the annual trends. This analysis seeks to answer the following: 
+In this project, the main aim is to analyze the business license data of North Vancouver in 2024 through Exploratory Data Analysis. Hence, in this paper, we seek to explore the economic activities of the area of interest by focusing on the business type, the status of the license, and the annual trends. This analysis seeks to answer the following: **In 2024, which business types are most common in North Vancouver, and how are the licenses spread across the different categories?**
 
 ### Architecture
 ![Descriptive Analysis](https://github.com/user-attachments/assets/bb301928-a8b5-495d-a730-60c75bb0a917)
-
-**In 2024, which business types are most common in North Vancouver, and how are the licenses spread across the different categories?**
 
 ### Dataset
 The dataset includes detailed information about business licenses issued between 2013 and 2024 across various areas, specifically focusing on North Vancouver. It contains the following key columns:
@@ -88,6 +86,9 @@ This work aims to identify the usage and effectiveness of AWS components used in
 - Track storage usage, the number of objects, and the estimated charges for the raw, transformed, and curated buckets.  
 - Set alerts to warn when thresholds are crossed, facilitating early intervention.
 
+### Example
+![dashboard](https://github.com/user-attachments/assets/ba4fcbbb-a9eb-47b9-8d74-fdc91ffbe9c8)
+
 ### Dataset
 The diagnostic analysis focuses on AWS resources used in the data pipeline for processing business licenses:
 - **S3 Buckets:** Storage and number of objects in each bucket:  
@@ -125,6 +126,9 @@ Exploratory Data Analysis in a Dirty Dataset (Week 3).
 
 ### Objective
 Identify anomalies, patterns, and insights using features such as age and income. Prepare the dataset for better analysis.
+
+### Architecture
+![data wrangling](https://github.com/user-attachments/assets/5029db04-f860-4503-858e-b83c2558ac6e)
 
 ### Dataset
 The dataset includes customer information with fields:
@@ -171,6 +175,9 @@ A review of students, admission, and registration datasets for data quality.
 
 ### Objective
 Conduct data quality control to ensure data is accurate, complete, and usable for analysis or operations.
+
+### Architecture
+![data wrangling](https://github.com/user-attachments/assets/5029db04-f860-4503-858e-b83c2558ac6e)
 
 ### Background
 #### Students Dataset
