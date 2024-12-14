@@ -1,1 +1,1 @@
-# cloud-computing-project
+# AWS project
